@@ -1,0 +1,47 @@
+// COLORS
+$color-primary: #7ed56f;
+$color-primary-light: #55c57a;
+$color-primary-dark: #28b485;
+$color-grey-light-1: #f7f7f7;
+$color-grey-dark: #777;
+$color-white: #fff;
+$color-black: #000;
+$breakpoint: 767px;
+
+// FONT
+
+$default-font-size: 1.6rem;
+
+// GRID
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 114rem;
+}
+
+@media (min-width: $breakpoint+1) {
+    @for $i from 1 through 12 {
+        .col-#{$i} {
+            width: (100%/12)*$i;
+        }
+    }
+}
+
+[class*='col-'] {
+    float: left;
+    min-height: 1px;
+    @media (max-width: $breakpoint) {
+        float: none;
+        width: 100%;
+    }
+}
+
+.row {
+    &::after,
+    &::before {
+        display: table;
+        content: '';
+        clear: both;
+    }
+}
