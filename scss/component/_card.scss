@@ -24,6 +24,12 @@
             &-1 {
                 background-image: linear-gradient(to bottom right, $color-secondary-light, $color-secondary-dark);
             }
+            &-2 {
+                background-image: linear-gradient(to bottom right, $color-primary-light, $color-primary-dark);
+            }
+            &-3 {
+                background-image: linear-gradient(to bottom right, $color-tertiary-light, $color-tertiary-dark);
+            }
         }
     }
     &:hover &__side--front {
@@ -40,6 +46,12 @@
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         &--1 {
             background-image: linear-gradient(to bottom right, $color-secondary-light, $color-secondary-dark), url(../images/nat-5.jpg);
+        }
+        &--2 {
+            background-image: linear-gradient(to bottom right, $color-primary-light, $color-primary-dark), url(../images/nat-6.jpg);
+        }
+        &--3 {
+            background-image: linear-gradient(to bottom right, $color-tertiary-light, $color-tertiary-dark), url(../images/nat-7.jpg);
         }
     }
     &__heading {
@@ -63,10 +75,10 @@
             background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .85), rgba($color-secondary-dark, .85));
         }
         &--2 {
-            background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .85), rgba($color-secondary-dark, .85));
+            background-image: linear-gradient(to right bottom, rgba($color-primary-light, .85), rgba($color-primary-dark, .85));
         }
         &--3 {
-            background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .85), rgba($color-secondary-dark, .85));
+            background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, .85), rgba($color-tertiary-dark, .85));
         }
     }
     &__details {
