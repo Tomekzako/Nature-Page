@@ -11,6 +11,8 @@
         box-shadow: 0 1rem 3rem rgba($color-black, .1);
         text-align: center;
         cursor: pointer;
+        outline: none;
+        border: none;
     }
     &__background {
         height: 6rem;
@@ -101,5 +103,24 @@
     }
     &__button:hover &__icon::after {
         top: 1rem;
+    }
+    &__button--checked {
+        .navigation__icon {
+            background-color: transparent;
+            &::after {
+                top: 0;
+                transform: rotate(135deg);
+            }
+            &::before {
+                top: 0;
+                transform: rotate(-135deg);
+            }
+        }
+        &:hover {
+            .navigation__icon::before,
+            .navigation__icon::after {
+                top: 0;
+            }
+        }
     }
 }
