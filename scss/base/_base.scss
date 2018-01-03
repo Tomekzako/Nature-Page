@@ -3,7 +3,7 @@
 *::before {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 html {
@@ -16,5 +16,13 @@ html {
     }
     @include respond (phone) {
         font-size: 40%;
+    }
+}
+
+body {
+    padding: 3rem;
+    box-sizing: border-box;
+    @include respond (tab-small) {
+        padding: 0;
     }
 }

@@ -13,6 +13,14 @@
         cursor: pointer;
         outline: none;
         border: none;
+        @include respond (tab-small) {
+            top: 4rem;
+            right: 4rem;
+        }
+        @include respond (phone) {
+            top: 2rem;
+            right: 2rem;
+        }
     }
     &__background {
         height: 6rem;
@@ -24,6 +32,14 @@
         background-image: radial-gradient($color-primary-light, $color-primary-dark);
         z-index: 1000;
         transition: transform .8s;
+        @include respond (tab-small) {
+            top: 4.5rem;
+            right: 4.5rem;
+        }
+        @include respond (phone) {
+            top: 2.5rem;
+            right: 2.5rem;
+        }
     }
     &__background--scale {
         transform: scale(80);
