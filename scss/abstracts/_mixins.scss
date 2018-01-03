@@ -4,3 +4,26 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+@mixin respond ($breakpoint) {
+    @if $breakpoint==phone {
+        @media (max-width: 600px) {
+            @content;
+        }
+    }
+    @if $breakpoint==tab-small {
+        @media (max-width: 900px) {
+            @content;
+        }
+    }
+    @if $breakpoint==tab-big {
+        @media (max-width: 1200px) {
+            @content;
+        }
+    }
+    @if $breakpoint==big-desktop {
+        @media (max-width: 600px) {
+            @content;
+        }
+    }
+}
