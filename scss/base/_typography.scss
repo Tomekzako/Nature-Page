@@ -69,4 +69,7 @@ body {
     &:not(:last-child) {
         margin-bottom: 3rem;
     }
+    @include respond (tab-small) {
+        text-align: justify
+    }
 }

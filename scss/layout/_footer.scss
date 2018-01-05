@@ -11,10 +11,22 @@
         height: auto;
         width: 15rem;
     }
+    &__info {
+        margin: 0 auto;
+        max-width: 114rem;
+        @include respond (tab-small) {
+            max-width: 50rem;
+        }
+    }
     &__navigation {
         border-top: 1px solid $color-grey-dark;
         padding-top: 2rem;
         display: inline-block;
+        @include respond (tab-small) {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 5rem;
+        }
     }
     &__list {
         list-style: none;
@@ -47,5 +59,14 @@
         padding-top: 2rem;
         width: 80%;
         float: right;
+        @include respond (tab-small) {
+            width: 100%;
+            float: none;
+            text-align: center;
+            padding: 2rem 4rem;
+        }
+    }
+    @include respond (tab-small) {
+        padding: 10rem 0;
     }
 }
