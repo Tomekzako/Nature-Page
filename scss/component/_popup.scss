@@ -49,16 +49,30 @@
         width: 33.33333%;
         display: table-cell;
         vertical-align: middle;
+        @include respond (tab-small) {
+            width: 100%;
+            display: block;
+        }
     }
     &__right {
         width: 66.66667%;
         display: table-cell;
         vertical-align: middle;
         padding: 3rem 5rem;
+        @include respond (tab-small) {
+            width: 100%;
+            display: block;
+            text-align: center;
+            padding: 1rem 3rem;
+        }
     }
     &__img {
         display: block;
         width: 100%;
+        @include respond (tab-small) {
+            width: 50%;
+            margin: 2rem auto;
+        }
     }
     &__text {
         font-size: 1.4rem;
